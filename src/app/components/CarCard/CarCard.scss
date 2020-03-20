@@ -1,0 +1,79 @@
+@import '../../shared/styles/variable';
+@import '../../shared/styles/mixins';
+
+$total-items: 10;
+
+.card {
+  margin: 20px 10px;
+  border: none;
+  background-color: $white;
+  border-radius: 20px;
+  animation: fadeIn 0.5s linear;
+  animation-fill-mode: both;
+  position: relative;
+
+  @for $i from 1 through $total-items {
+    &:nth-child(#{$i}) {
+      animation-delay: .20s * $i;
+    }
+  }
+
+  .carimage-holder {
+    padding: 15px;
+  }
+
+  .card-info {
+    padding: 0 15px 15px;
+  }
+
+  .card-summary {
+    font-size: 14px;
+    text-align: justify;
+    color: $secondary;
+    margin: 0;
+  }
+
+  h5 {
+    color: $dark;
+    font-weight: 800;
+  }
+
+  > a:hover {
+    text-decoration: none;
+  }
+
+  .car-img img {
+    transition: transform 1s ease;
+    will-change: transform;
+  }
+
+  &:hover {
+    .car-img img {
+      @include transform(scale(1.1));
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

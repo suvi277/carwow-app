@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import CarList from './pages/CarList/CarList';
+import CarDetail from './pages/CarDetail/CarDetail';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import './shared/styles/main.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Router = () => (
+	<BrowserRouter>
+		<Header />
+		<Switch>
+			<Route exact path="/" component={CarList} />
+			<Route path="/model/:id" component={CarDetail} />
+		</Switch>
+		<Footer />
+	</BrowserRouter>
+);
 
-export default App;
+export default Router;

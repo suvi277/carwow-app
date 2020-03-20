@@ -1,0 +1,13 @@
+@import "../../shared/styles/variable";
+
+button {
+    border: 0;
+    background: $dark;
+    color: $white;
+    font-size: 14px;
+    padding: 12px;
+
+    &:hover {
+        background: $secondary;
+    }
+}

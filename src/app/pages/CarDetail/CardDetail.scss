@@ -1,0 +1,9 @@
+.card-detail {
+    margin: 0 0 80px;
+    
+    @media screen  and (min-width: 768px) {
+        border: 1px dotted #cccccc;
+        border-radius: 5px;
+        padding: 20px 15px;
+    }
+}

@@ -1,0 +1,28 @@
+.card-detail-holder {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    h2 {
+        margin-bottom: 0;
+    }
+    .car-tagline {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    .car-summary {
+        padding: 12px 0;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    @media screen  and (min-width: 768px) { 
+        border-left: 1px solid #cccccc;
+        padding-left: 30px;
+
+        Button {
+            width: 40%;
+        }
+    }
+}
