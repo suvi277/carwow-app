@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/carwow-app/static/css/main.227af82c.chunk.css",
+    "main.js": "/carwow-app/static/js/main.60c9cdfa.chunk.js",
+    "main.js.map": "/carwow-app/static/js/main.60c9cdfa.chunk.js.map",
+    "runtime-main.js": "/carwow-app/static/js/runtime-main.e7eda8bd.js",
+    "runtime-main.js.map": "/carwow-app/static/js/runtime-main.e7eda8bd.js.map",
+    "static/js/2.67998d2a.chunk.js": "/carwow-app/static/js/2.67998d2a.chunk.js",
+    "static/js/2.67998d2a.chunk.js.map": "/carwow-app/static/js/2.67998d2a.chunk.js.map",
+    "index.html": "/carwow-app/index.html",
+    "precache-manifest.4be1289aea2b3a53be565c8eab345eea.js": "/carwow-app/precache-manifest.4be1289aea2b3a53be565c8eab345eea.js",
+    "service-worker.js": "/carwow-app/service-worker.js",
+    "static/css/main.227af82c.chunk.css.map": "/carwow-app/static/css/main.227af82c.chunk.css.map",
+    "static/js/2.67998d2a.chunk.js.LICENSE.txt": "/carwow-app/static/js/2.67998d2a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7eda8bd.js",
+    "static/js/2.67998d2a.chunk.js",
+    "static/css/main.227af82c.chunk.css",
+    "static/js/main.60c9cdfa.chunk.js"
+  ]
+}
